@@ -11,7 +11,7 @@
 <body>
     <header></header>
     <main>
-<section>
+<section class="formcontainer">
     <form action="" id="registration" method="POST" autocomplete="off">
 <div>
     <input type="text" name="username" id="usernamefield" placeholder="Username...">
@@ -23,7 +23,9 @@
     <span id="text"></span>
 </div>
 <div>
-    <input type="password" name="pasww" id="passwordfield" placeholder="Password...">
+    <input type="password" name="pasww" id="passwordfield" placeholder="Password..."
+    >
+    <p class="passwordText">Show Password</p>
     <i class="fa-solid fa-eye" id="toggleIcon"></i>
     <span id="error_pasww" class="error-text"></span>
 </div>
@@ -41,7 +43,7 @@
 </div>
 <div>
 <input type="checkbox" name="agree" id="agree">
-<label for="agree">I agree terms and conditions</label>
+<label for="agree">I agree to <a href="#">terms</a>  and <a href="#"> conditions</a></label>
 <span id="error_agree" class="error-text"></span>
 </div>
 <button type="submit">Submit</button>

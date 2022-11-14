@@ -14,3 +14,36 @@
     display:block;
 }
 
+.formcontainer{
+    width:400px;
+    height:500px;
+    margin:30px auto;
+    border-radius:10px;
+    background-color: antiquewhite;
+}
+
+.formcontainer input{
+    padding:10px 14px;
+    width:100%;
+    border-radius:10px;
+    margin-bottom:20px;
+    border:none;
+    border-bottom:2px solid #000000;
+}
+
+.passwordText{
+    display:inline-block;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.formcontainer button{
+    margin-top:20px;
+    width:100%;
+    height:30px;
+   font-weight:bold;
+}
+
+
+
+

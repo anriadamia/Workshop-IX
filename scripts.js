@@ -65,20 +65,23 @@ gender:"Please select your gender"
 let showPassword=document.getElementById("passwordfield");
 let showPassword2=document.getElementById("passwordfield2");
 let toggleIcon=document.getElementById("toggleIcon");
+let passwordText=document.querySelector(".passwordText")
 
 toggleIcon.addEventListener("click",function(){
     if(showPassword.type=="password"
     ||showPassword2.type=="password"){
+        passwordText.textContent="Hide Password"
         showPassword.setAttribute("type","text");
         showPassword2.setAttribute("type","text");
         toggleIcon.classList.remove("fa-eye")
-        toggleIcon.classList.add("fa-eye-slash")
+        toggleIcon.classList.add("fa-eye-slash");
+        
     }else{
+        passwordText.textContent="Show Password"
         toggleIcon.classList.remove("fa-eye-slash");
         toggleIcon.classList.add("fa-eye")
         showPassword.setAttribute("type","password");
         showPassword2.setAttribute("type","password");
-
     }
 })
 
